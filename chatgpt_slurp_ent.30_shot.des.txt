@@ -1,0 +1,99 @@
+Given a command from the user, a voice assistant like Siri or Olly will extract entities from the command that are essential for carry out the the command. For example, for a command about playing a specific song, the name of the song mentioned by the user would be an entity, falling under the type of “song name”.
+
+Your task is to extract the entities as words from the command if they fall under any of the types given below according to the following description:
+alarm type: type or description of the alarm, like wake up, reminder, etc.
+app name: the app the user asked about, when the user wants to use it to play music, buy transport ticket, find recipes, etc.
+artist name: the name of the artist when asked about music, audiobook, etc.
+audiobook author: author of the audiobook the user wants to play
+audiobook name: name of the audiobook
+business name: name of the business in the commend, like sony, chinese restaurant, dominoes, etc.
+business type: type of the business for recommendation, takeaway ordering, transport, etc.
+coffee type: type or description of the coffee, like espresso, creamy, morning, etc.
+contact field: field of the contact info, llike address, phone number, email address, etc.
+cooking type: type of the cooking method or the food, like baking, grilled, crispy, etc.
+currency name: name of the currency being asked about
+date: relevant date
+definition asked: the thing asked, when the user asks for the definition or explanation of something
+device change amount: the amount when the user tunes some amount like volume or brightness on some device, like twenty percent, loudest, to seven, etc.
+device type: the type of the device under an IoT scenario, like ps four, vacuum, coffee pot, etc.
+drink type: type of the drink for recipe, food ordering, or recommendation, like beer, soft drink, etc.
+email address: email address when users sends an email or add a contact
+email folder: the folder of the email, could be inbox
+event name: name of the event to be asked, mentioned, recommended, scheduled, etc.
+food type: name or type of the food in the command for ordering food, recommending places, cooking recipes, etc.
+frequency: frequency mentioned, like every one hour, daily, etc.
+game name: the name of the game when the user wants to play a specific game, like poker, snake, etc.
+game type: type of the game the user wants to play, like race, puzzle, etc.
+house place: place in the house, like kitchen, living room, etc.
+ingredient: ingredient mentioned in the recipe or takeaway order
+joke type: the description of the joke, when user asks for a joke
+light color type: type of the color of the light the user requests, like white, warm, good for sleep, etc.
+list name: name of the list
+meal type: type of the meal, like breakfast, lunch, dinner, etc.
+media type: type of the media that the user wants to watch or listen to, like songs, radio, or more specific ones like cbs, cnn, etc.; could also be social media the user wants to use, like facebook, tweet, etc.
+movie name: name of the movie the user asks for recommendation
+movie type: type of the movie when user asks for recommendation, like action, comedy, etc.
+music album: the name of the album if the user asks for a specific album
+music description: description of the music, like upbeat, party songs, etc.
+music genre: type of music, like jazz, rock, etc.
+news topic: topic for the news the user asks about
+order type: type of food ordering, could be takeaway or delivery.
+person: person names mentioned in the command
+place name: place mentioned in the command, like school, new york, etc.
+player setting: control setting for the player, like play, stop, jump to chapter five, etc.
+playlist name: name of the playlist
+podcast description: description of the podcast to be played, like the latest, the next, the top rated, etc.
+podcast name: name of the podcast to be played
+radio name: name of the radio station or channel
+related people: referring people related to the user mentioned in the command, like father, colleague, etc.
+song name: name of the song
+sport type: type of the sport, like basketball, soccer match, etc.
+time: time or duration mentioned in the command, like ten am, five minutes, noon, etc.
+time of day: parts of a day, like morning, afternoon, evening, etc.
+time zone: time zone the user asks about, like gmt, current timezone, etc.
+transport app: name of the transport app, like uber
+transport description: description of the transport ticket, like round trip, first class, etc.
+transport name: the name of the transport when the user asks about a specific transport, like train five, eurostar, etc.
+transport type: type of transport, like bus, train, etc.
+weather description: description or situation relevant to the weather the user asks about, like sunny, windy, raincoat, temperature, etc.
+
+Please give answers like:
+1. person: john; contact field: phone number
+2. transport app: uber; time of day: tonight; time: ten pm
+3. None
+4. music genre: jazz
+etc., each taking a single line. The entity type must be one of the types given above, and the entity must be copied verbatim from the command. There could be zero, one, or multiple entities in a command.
+
+For example,
+1. “siri what is one u.s.d. in japanese yen”: the answer is “currency name: u.s.d.; currency name: japanese yen”.
+2. “tell me when obama was born”: the answer is “None”.
+3. “does the nearby chinese restaurant do delivery”: the answer is “food type: chinese; business type: restaurant; order type: delivery”.
+4. “change my room lights so that i can get a good sleep”: the answer is “light color type: good sleep”.
+5. “schedule the meeting with chelsea”: the answer is “event name: meeting; person: chelsea”.
+6. “what is the seattle city council doing about homelessness”: the answer is “place name: seattle; news topic: city council doing about homelessness”.
+7. “by ten to eleven am daily start my vacuum cleaner”: the answer is “time: ten; time: eleven am; frequency: daily; device type: vacuum cleaner”.
+8. “tell me about morel mushrooms”: the answer is “definition asked: morel mushrooms”.
+9. “set an alarm to remind me to meet joe for dinner this evening”: the answer is “alarm type: remind; person: joe; meal type: dinner; time of day: evening”.
+10. “can i wear shorts out while shopping next week”: the answer is “weather description: shorts; date: next week”.
+11. “play the most current episode of levin”: the answer is “podcast description: most current episode; podcast name: levin”.
+12. “order a double bacon cheeseburger with bacon and white american cheese”: the answer is “food type: bacon cheeseburger; food type: bacon; food type: american cheese”.
+13. “play ninety three point five fm”：the answer is “radio name: ninety three point five fm”.
+14. “switch to the eastern time zone”: the answer is “time zone: eastern”.
+15. “loop the audio book leaves of grass”: the answer is “player setting: loop; media type: audio book; audiobook name: leaves of grass”.
+16. “tweet complaint to samsung”: the answer is “media type: tweet; business name: samsung”.
+17. “schedule a vacation trip with my family”: the answer is “event name: vacation trip; related people: family”.
+18. “change light colors from blue to white”: the answer is “light color type: blue; light color type: white”.
+19. “please pull up the article on dog sitting in the morning news”: the answer is “news topic: dog; media type: morning news”.
+20. “what is the definition of a home run”: the answer is “definition asked: home run”.
+21. “remove pepper from my grocery list”: the answer is “list name: grocery”.
+22. “what is mom's email address”: the answer is “contact field: email address; related people: mom's”.
+23. “open some cools jokes”: the answer is “joke type: cools”.
+24. “my favorite singer is shakira”: the answer is “artist name: shakira”.
+25. “play all pop songs please”: the answer is “music description: all; music genre: pop”.
+26. “play the song i want it that way”: the answer is “song name: i want it that way”.
+27. “please turn bedroom lights off”: the answer is “house place: bedroom”.
+28. “go to youtube and play me the best wedding songs collection”: the answer is “media type: youtube; playlist name: best wedding songs”.
+29. “buy me today train ticket to leeds the northern rail one”: the answer is “date: today; transport type: train; place name: leeds; transport name: northern rail”.
+30. “how much time to cook pasta”: the answer is “cooking type: cook; food type: pasta”.
+
+The commands are:

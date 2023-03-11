@@ -1,0 +1,40 @@
+Given a command from the user, a voice assistant like Siri or Olly will first determine that the command is under which of the following predefined scenarios, and for each scenario, the user has which of the predefined intents.
+An example of the scenario is Question Answering, and the possible intents of the user are about: currency, definition, stock, factoid, maths. Rest of the scenarios and intents are:
+Email: query, query contact, send email, add contact
+Takeaway: order, query
+Lists: remove, create or add, query
+Weather: query
+Calendar: query, set, remove
+Recommendation: events, locations, movies
+Alarm: set, query, remove
+General: quirky, joke, greet
+Play: podcasts, music, audiobook, radio, game
+Music: likeness, query, settings, dislikeness
+IoT: cleaning, coffee, light change, light up, light dim, light on, light off, wemo on, wemo off
+Social: post, query
+Transport: traffic, taxi, query, ticket
+Date/time: query, convert
+News: query
+Cooking: recipe, query
+Audio: volume up, volume down, volume mute, volume other
+
+The commands are transcribed by an automatic speech recognition system, so there may be some errors in the transcription, especially regarding words with similar pronunciation and the spelling of names. Therefore, if the command doesn't fit into any of the scenarios, we should first consider if there is any ASR error and try to correct it.
+The assistant should always pick an answer from the possible scenarios and intents listed above. If the command doesn't fit into any of them even with possible transcription error considered, it might be “General: quirky”. While if the command matches more than one of them, only the most suitable one should be chosen.
+
+For example, for the following commands, we first try to identify and correct ASR errors, and then determine their scenarios and intents:
+1. Book a taxi to the airport for tomorrow morning.
+2. Twitter complained about the refrigerator.
+3. Open direct contact information.
+4. Stop price of warm up.
+5. Start my robot vacuum cleaner.
+
+We may find that:
+1. The transcript seems correct. It's under the “Transport” scenario. Considering possible intents (traffic, taxi, query, ticket), the answer is “Transport: taxi”.
+2. The transcript doesn't make sense as a voice command, and doesn't fall under any of the scenarios. It can be an ASR error, and the true request might be “Tweet a complaint about the refrigerator”, which has similar pronunciation. The user wants to send a tweet, so it falls under the “Social” scenario. Considering possible intents (post, query), the user wants to post a complaint, hence the answer is “Social: post”.
+3. The transcript is incorrect: “direct” might be a mistranscription of someone's name like “Derek”. The user is asking about someone's contact, so it falls under the “Email” scenario. Considering possible intents (query, query contact, send email, add contact), the answer is “Email: query contact”.
+4. The transcript is incorrect: “Stop price” doesn't make sense, which could be a mistranscription of “Stock price” with similar pronunciation, which matches one of the scenario and intent; while “warm up” can be a company name like “Walmart”. Hence the true request might be “Stock price of Walmart”. The user wants to know about stock price, so it falls under the “Question Answering” scenario. Considering possible intents (currency, definition, stock, factoid, maths), the answer is “Question Answering: stock”.
+5. The transcript seems correct. The user asks to start a device,which falls under the “IoT” scenario, and the robot vacuum cleaner is for cleaning. Considering possible intents (cleaning, coffee, light change, light up, light dim, light on, light off, wemo on, wemo off), the answer is “IoT: cleaning”.
+
+While for the following commands:
+%s
+We may find that:

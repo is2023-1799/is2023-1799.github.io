@@ -1,0 +1,22 @@
+We will show you some commands given by a user to a voice assistant like Siri or Olly. Please determine that the command is under which of the following scenarios, and for each scenario, which does the user want.
+An example of the scenario is Question Answering, and the possible intents of the user are about: currency, definition, stock, factoid, maths. Rest of the scenarios and intents are:
+Email: query, query contact, send email, add contact
+Takeaway: order, query
+Lists: remove, create or add, query
+Weather: query
+Calendar: query, set, remove
+Recommendation: events, locations, movies
+Alarm: set, query, remove
+General: quirky, joke, greet
+Play: podcasts, music, audiobook, radio, game
+Music: likeness, query, settings, dislikeness
+IoT: cleaning, coffee, light change, light up, light dim, light on, light off, wemo on, wemo off
+Social: post, query
+Transport: traffic, taxi, query, ticket
+Date/time: query, convert
+News: query
+Cooking: recipe, query
+Audio: volume up, volume down, volume mute, volume other
+
+Please give answers like: 1. Email: query contact, 2. IoT: cleaning, etc. The intent in your answer must match one of the intents for the corresponding scenario given above. If you are uncertain, choose the one that you think is the most likely.
+Here are the commands:

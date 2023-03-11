@@ -1,0 +1,52 @@
+We will show you some commands given by a user to a voice assistant. Please determine that the command is under which of the following scenarios. Also, for each scenario the user want different things particular to the scenario. Please also determine what does the user want.
+Among the possible scenarios, an example is Question Answering. For this scenario, there are five possible intents of the user, including: currency, definition, stock, factoid, maths.
+Another example is the scenario of Email. For this scenario, there are four possible intents of the user, including: query, query contact, send email, add contact.
+There are also many other scenarios and intents. Other scenarios and intents we consider are listed below:
+Takeaway: order, query
+Lists: remove, create or add, query
+Weather: query
+Calendar: query, set, remove
+Recommendation: events, locations, movies
+Alarm: set, query, remove
+General: quirky, joke, greet
+Play: podcasts, music, audiobook, radio, game
+Music: likeness, query, settings, dislikeness
+IoT: cleaning, coffee, light change, light up, light dim, light on, light off, wemo on, wemo off
+Social: post, query
+Transport: traffic, taxi, query, ticket
+Date/time: query, convert
+News: query
+Cooking: recipe, query
+Audio: volume up, volume down, volume mute, volume other
+
+To determine the scenario and intent is a critical task for voice assistants, which are nowadays widely used in everyday lives, running on devices like smartphones and smart speakers to listen to possible commands. In this way, the user may easily get answers about their questions or control Internet-of-Things (IoT) devices, simply by talking to the device.
+
+The answer should be a list of intent and scenario pairs, one per line, in the following format, corresponding to the commands we will show you:
+1. Email: query contact
+2. IoT: cleaning
+3. Music: likeness
+etc. The intent in your answer must match one of the intents for the corresponding scenario given above. If you are uncertain, choose the one that you think is the most likely.
+
+Below we show you some examples for the commands and the corresponding scenarios and intents:
+1. The command is “book a taxi to the airport for tomorrow morning”. For this case, the scenario and intent is “Transport: taxi”.
+2. The command is “if it's eight pm on the east coast what time is it in sacramento california”. For this case, the scenario and intent is “Date/time: convert”.
+3. The command is “open derek's contact information”. For this case, the scenario and intent is “Email: query contact”.
+4. The command is “bring up a recipe for turkey meatballs”. For this case, the scenario and intent is “Cooking: recipe”.
+5. The command is “start my robot vacuum cleaner”. For this case, the scenario and intent is “IoT: cleaning”.
+6. The command is “define the moon for me”. For this case, the scenario and intent is “Question Answering: definition”.
+7. The command is “i want to reply to jean's email”. For this case, the scenario and intent is “Email: send email”.
+8. The command is “what exhibits or shows are scheduled at the metropolitan theater”. For this case, the scenario and intent is “Recommendation: events”.
+9. The command is “nighttime mode”. For this case, the scenario and intent is “IoT: light dim”.
+10. The command is “turn on repeat”. For this case, the scenario and intent is “Music: settings”.
+11. The command is “olly i got into a wreck today”. For this case, the scenario and intent is “General: quirky”.
+12. The command is “where is denmark”. For this case, the scenario and intent is “Question Answering: factoid”.
+13. The command is “time to hear me some blake shelton”. For this case, the scenario and intent is “Play: music”.
+14. The command is “what time is it in dooa”. For this case, the scenario and intent is “Date/time: query”.
+15. The command is “please send me info on how to go about purchasing a train ticket to new york”. For this case, the scenario and intent is “Transport: query”.
+16. The command is “search for two tickets on tuesday's train to paris”. For this case, the scenario and intent is “Transport: ticket”.
+17. The command is “turn lights blue”. For this case, the scenario and intent is “IoT: light change”.
+18. The command is “when is taco bell going to arrive”. For this case, the scenario and intent is “Takeaway: query”.
+19. The command is “add pastries `to the christmas list”. For this case, the scenario and intent is “Lists: create or add”.
+20. The command is “will i need sunblock this weekend”. For this case, the scenario and intent is “Weather: query”.
+
+How about the following commands? Please answer according to the descriptions above.

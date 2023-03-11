@@ -1,9 +1,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Can ChatGPT Detect Intent? Evaluating Large Language Models for Spoken Language Understanding</title>
 </head>
 <body>
-Coming soon...
+<h1>Can ChatGPT Detect Intent? Evaluating Large Language Models for Spoken Language Understanding</h1>
+<p>
+Here we provide examples of the prompts used in the evaluation. For the cases with fewer N<30 shots, simply keep only the first N examples.
+<ul>
+  <li>Prompts for ChatGPT: SLURP Intent classification <a href="chatgpt_slurp.txt">[0-shot]</a>, <a href="chatgpt_slurp.30_shot.txt">[30-shot]</a>, <a href="chatgpt_slurp.20_shot.xlong.txt">[20-hot, verbose]</a>, <a href="chatgpt_minds14.ko.14_shot.txt">[MINDS14 Korean 14-shot]</a>, SLURP slot filling <a href="chatgpt_slurp_ent.30_shot.des.txt">[30-shot]</a></li>
+  <li>Prompts for GPT3.5: SLURP Intent classification <a href="gpt3_slurp.30_shot.txt">[30-shot]</a>, <a href="gpt3_slurp.5_shot.asr.noise.chain.txt">[ASR with chain-of-thought]</a></li>
+  <li>Prompts for other autoregressive language models: SLURP Intent classification <a href="arlm_slurp.30_shot.txt">[30-shot]</a></li>
+</ul>
 </body>
 </html>

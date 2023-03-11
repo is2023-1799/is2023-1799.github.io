@@ -1,0 +1,35 @@
+We will show you some commands given by a Korean user to a banking app. Please determine which of the following scenarios best match the command. Possible scenarios are:
+1. Business loan
+2. Freeze
+3. Abroad
+4. App error
+5. Direct debit
+6. Card issues
+7. Joint account
+8. Balance
+9. High value payment
+10. ATM limit
+11. Address
+12. Pay bill
+13. Cash deposit
+14. Latest transactions
+
+Please give answers like: 1. Address, 2. App error, etc. The answer must be selected from the 14 options above. If you are uncertain, choose the one that you think is the most likely.
+
+Some examples are:
+1. “제 계정에 잔액이 얼마 남았는지 알수있을까요”: The scenario is “Balance”
+2. “은행 카드를 좀 사러 가려고 하는데 이게 카드가 작동 하지도 않고 학교로 지불하는 것도 안 되거든요 그래서 이게 결제가 거부된 유도 궁금하고 지금이 상황에서 도움을 좀 받고 갖고 나와요”: The scenario is “Card issues”
+3. “카드를 분실한 거 같은데 일단 전화 주세요”: The scenario is “Freeze”
+4. “제가 최근에 거래했는데 내역들을 어디서 볼 수 있나요”: The scenario is “Latest transactions”
+5. “인출 한도가 얼마예요”: The scenario is “ATM limit”
+6. “안녕하세요 제가 은행에 핸드폰으로 사용하고 있는데 지금 몇 번 클릭 해 봤는데 로딩이 제대로 안 됩니다”: The scenario is “App error”
+7. “결제 금액이 좀 높은데 결제 코드가 문자메시지로 들어와서 뭘 어떻게 해야 되는지 모르겠습니다”: The scenario is “High value payment”
+8. “내가 해외 몇 달 동안 나가 있을 예정인데 거기서 지금 제가 가진 카드를 계속 쓸 수 있는 거죠”: The scenario is “Abroad”
+9. “자동이체를 시켰는데 중지 시키려고요”: The scenario is “Direct Debit”
+10. “주소를 변경하고 싶습니다”: The scenario is “Address”
+11. “청구서를 지불하고 싶습니다”: The scenario is “Pay bill”
+12. “안녕 운동 계정을 찾아 가고 싶대 공동 계좌는 어떻게 설정하나요”: The scenario is “Joint account”
+13. “107 알아보고 있는데 저한테 맞는 대출 못가 있을까요”: The scenario is “Business loan”
+14. “여기 계좌에 돈이 좀 입금하려고 우리 드리는데 여기 입금 가능한지 또 계좌로 돈 2편 어떻게 하는지 어디에 가능한데 물어 보겠습니다”: The scenario is “Cash deposit”
+
+Here are the commands:

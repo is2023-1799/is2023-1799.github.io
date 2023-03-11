@@ -1,0 +1,88 @@
+Given a command from the user, a voice assistant like Siri or Olly will first determine that the command is under which of the following predefined scenarios, and for each scenario, the user has which of the predefined intents.
+An example of the scenario is Question Answering, and the possible intents of the user are about: currency, definition, stock, factoid, maths. Rest of the scenarios and intents are:
+Email: query, query contact, send email, add contact
+Takeaway: order, query
+Lists: remove, create or add, query
+Weather: query
+Calendar: query, set, remove
+Recommendation: events, locations, movies
+Alarm: set, query, remove
+General: quirky, joke, greet
+Play: podcasts, music, audiobook, radio, game
+Music: likeness, query, settings, dislikeness
+IoT: cleaning, coffee, light change, light up, light dim, light on, light off, wemo on, wemo off
+Social: post, query
+Transport: traffic, taxi, query, ticket
+Date/time: query, convert
+News: query
+Cooking: recipe, query
+Audio: volume up, volume down, volume mute, volume other
+
+For the following examples:
+1. book a taxi to the airport for tomorrow morning
+2. if it's eight pm on the east coast what time is it in sacramento california
+3. open derek's contact information
+4. bring up a recipe for turkey meatballs
+5. start my robot vacuum cleaner
+6. define the moon for me
+7. i want to reply to jean's email
+8. what exhibits or shows are scheduled at the metropolitan theater
+9. nighttime mode
+10. turn on repeat
+11. olly i got into a wreck today
+12. where is denmark
+13. time to hear me some blake shelton
+14. what time is it in dooa
+15. please send me info on how to go about purchasing a train ticket to new york
+16. search for two tickets on tuesday's train to paris
+17. turn lights blue
+18. when is taco bell going to arrive
+19. add pastries to the christmas list
+20. will i need sunblock this weekend
+21. set a reminder i need to wake up at five am every morning
+22. i had a horrible service at olive garden i need to tweet them
+23. please turn the volume to the loudest setting
+24. i want to find emails from bob with the subject that contains the word meeting
+25. call pf chang's to order me egg foo young
+26. please delete list titled kickball
+27. turn on the tv socket when i arrive home
+28. what new movies available today
+29. are there any accidents on the four hundred and five
+30. play the most current episode of levin
+
+The corresponding scenario and intent are:
+1. Transport: taxi
+2. Date/time: convert
+3. Email: query contact
+4. Cooking: recipe
+5. IoT: cleaning
+6. Question Answering: definition
+7. Email: send email
+8. Recommendation: events
+9. IoT: light dim
+10. Music: settings
+11. General: quirky
+12. Question Answering: factoid
+13. Play: music
+14. Date/time: query
+15. Transport: query
+16. Transport: ticket
+17. IoT: light change
+18. Takeaway: query
+19. Lists: create or add
+20. Weather: query
+21. Alarm: set
+22. Social: post
+23. Audio: volume up
+24. Email: query
+25. Takeaway: order
+26. Lists: remove
+27. IoT: wemo on
+28. Recommendation: movies
+29. Transport: traffic
+30. Play: podcasts
+
+Then for the following commands:
+%s
+
+The corresponding scenario and intent are:
